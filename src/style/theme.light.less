@@ -1,0 +1,21 @@
+.light {
+  @import '~antd/lib/style/themes/default.less';
+  @import '~antd/dist/antd.less';
+  @import 'variables';
+
+  @layout-header-background: @white;
+  @layout-sider-background-light: @white;
+  @menu-inline-submenu-bg: lighten(@primary-color, 25%);
+
+  .ant-menu-sub.ant-menu-inline {
+    background: @menu-inline-submenu-bg;
+    border-radius: 0;
+  }
+  .ant-layout-sider, .ant-layout-header {
+    box-shadow: @box-shadow-base;
+  }
+  .top-nav {
+    background: @layout-header-background;
+    box-shadow: @box-shadow-base;
+  }
+}

@@ -1,0 +1,143 @@
+@import 'variables';
+
+body {
+  overflow: hidden;
+  height: 100%;
+  #root {
+    height: 100%;
+  }
+}
+.ant-layout-sider {
+  box-sizing: border-box;
+  .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ant-menu {
+    border: none;
+  }
+  .ant-menu-submenu {
+    &-selected {
+      i {
+        color: @primary-color;
+      }
+    }
+    .ant-menu-item-active {
+      background: @primary-color;
+    }
+    .ant-menu-title-content {
+      a {
+        &:hover {
+          color: @white !important;
+        }
+      }
+    }
+  }
+  .ant-menu-submenu-title {
+    margin: 8px 0;
+    width: auto !important;
+    padding: 0 0 0 15px !important;
+  }
+  .ant-menu-item {
+    padding: 0 0 0 15px !important;
+  }
+  .ant-menu-submenu-open {
+    .ant-menu-item-only-child {
+      padding-left: 25px !important;
+    }
+  }
+}
+
+.ant-layout-header {
+  z-index: 3;
+}
+
+.ant-btn {
+  width: auto !important;
+}
+
+.ant-btn-icon-only {
+  width: 32px !important;
+}
+
+.ant-page-header-heading-left {
+  margin-left: 15px !important;
+}
+.ant-btn-default {
+  border-color: @primary-color !important;
+  color: @primary-color !important;
+}
+
+.ant-calendar-wrapper {
+  .ant-picker-date-panel {
+    width: 250px !important;
+    transform: scale(0.9);
+  }
+}
+
+.sider {
+  padding: 8px !important;
+  z-index: 2;
+  .ant-menu-item {
+    border-radius: 8px;
+    width: auto !important;
+
+    &-selected {
+      color: @white !important;
+      &:hover {
+        color: @white !important;
+      }
+    }
+  }
+  @media screen and (max-width: @screen-lg) {
+    &.mobile_sider {
+      padding: 8px !important;
+      .ant-menu-item {
+        padding: 0 calc(50% - 14px / 2) !important;
+      }
+      min-height: 100%;
+    }
+    padding: 0 !important;
+  }
+}
+.sub-sider, .sub-sider-mobile {
+  z-index: 1;
+  .ant-menu-item {
+
+    &-selected {
+      background: @primary-color !important;
+      color: @white !important;
+      a {
+        color: @white !important;
+      }
+      &:hover {
+        color: @white !important;
+      }
+    }
+  }
+}
+.ant-layout-header {
+  padding: 0 !important;
+}
+
+.cell-nowrap {
+  white-space: nowrap;
+}
+.ant-modal.big {
+  width: 900px !important;
+}
+.ant-modal.medium {
+  width: 680px  !important;
+}
+.ant-modal {
+  label {
+    font-weight: bold;
+  }
+}
+
+.button-action {
+  button {
+    margin-left: 20px;
+  }
+}

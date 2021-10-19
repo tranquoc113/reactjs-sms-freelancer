@@ -1,0 +1,29 @@
+.dark {
+  @import '~antd/dist/antd.dark.less';
+  @import '~antd/dist/antd.less';
+  @import 'variables';
+
+  @menu-inline-submenu-bg: lighten(@primary-color, 26%);
+  @layout-header-background: #111727;
+  @layout-body-background: #202938;
+  @component-background: @layout-header-background;
+  @select-background: @layout-header-background;
+
+  .ant-layout-sider, .ant-layout-header {
+    box-shadow: 8px 0 18px 3px #2a323d
+  }
+  .top-nav {
+    background: @layout-header-background;
+    box-shadow: 8px 0 18px 3px #2a323d
+  }
+
+  .sider {
+    box-shadow: none;
+    border-right: 1px solid @border-color-base;
+  }
+  .ant-select-selector {
+    background-color: @layout-header-background !important;
+    border-color: @border-color-base !important;
+  }
+
+}
